@@ -11,11 +11,12 @@ namespace ModernUIApp.Services {
             _customerApiUrl = configuration.GetValue<string> ("ApiURL");
         }
         public IEnumerable<Customer> GetAll () {
-            HttpClient customersApiClient = new HttpClient ();
-            HttpResponseMessage response = customersApiClient.GetAsync (_customerApiUrl).Result;
-            response.EnsureSuccessStatusCode ();
-            string jsonResponse = response.Content.ReadAsStringAsync ().Result;
-            var customers = JsonConvert.DeserializeObject<List<Customer>> (jsonResponse);
+            //HttpClient customersApiClient = new HttpClient ();
+            //HttpResponseMessage response = customersApiClient.GetAsync (_customerApiUrl).Result;
+            //response.EnsureSuccessStatusCode ();
+            //string jsonResponse = response.Content.ReadAsStringAsync ().Result;
+            //var customers = JsonConvert.DeserializeObject<List<Customer>> (jsonResponse);
+            var customers = new List<Customer>();
             return customers;
         }
     }

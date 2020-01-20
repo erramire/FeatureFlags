@@ -16,7 +16,7 @@ namespace ModernUIApp.Controllers
     {
         private ICustomerDataService _customerDataService;
         private IFeatureFlagService _featureFlagService;
-        private string _userName = "....@.....com";
+        private string _userName ="erramire@microsoft.com";
         public CustomersController(ICustomerDataService customerDataService, IFeatureFlagService featureFlagService)
         {
             _customerDataService = customerDataService;

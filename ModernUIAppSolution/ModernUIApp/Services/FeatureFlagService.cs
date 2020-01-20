@@ -8,7 +8,7 @@ namespace ModernUIApp.Services {
         User _ldUser;
        public FeatureFlagServiceService(IConfiguration configuration)
        {
-            _ldkey = configuration.GetValue<string> ("LaunchDarklyKey");
+            _ldkey = "sdk-xxxxxxx";
             _ldClient = new LdClient(_ldkey);
        }
         public bool ViewFeature (string Username) {
